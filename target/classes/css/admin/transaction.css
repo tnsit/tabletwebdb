@@ -1,0 +1,110 @@
+.main-for-list{
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.head-label p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 30px;
+    width: 1160px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.excel{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url("/image/excel.svg") no-repeat;
+    background-size:contain;
+}
+
+.excel:hover{
+    -webkit-filter:invert(21%) sepia(100%) saturate(6940%) hue-rotate(318deg) brightness(89%) contrast(105%);
+}
+
+.excel:active{
+    transform: scale(0.9);
+}
+
+.found{
+    float: left;
+    padding: 0;
+    margin: 0 0 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.list-headline{
+    width: 1160px;
+    height: 40px;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
+}
+
+.list-headline p{
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    float: left;
+    font-weight: bold;
+}
+
+.list-headline p:first-child, .list-element-headline p:first-child{
+    width: 100px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.list-headline p:nth-child(2), .list-element-headline p:nth-child(2){
+    width: 310px;
+}
+
+.list-headline p:nth-child(3), .list-element-headline p:nth-child(3){
+    width: 310px;
+}
+
+.list-headline p:nth-child(4), .list-element-headline p:nth-child(4){
+    width: 130px;
+}
+
+.list-headline p:nth-child(5), .list-element-headline p:nth-child(5){
+    width: 310px;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.list-element-container{
+    box-sizing: border-box;
+    width: 1160px;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 300ms;
+}
+
+.list-element-headline{
+    box-sizing: border-box;
+    width: 1160px;
+    height: 40px;
+}
+
+.list-element-headline p{
+    float: left;
+    box-sizing: border-box;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}

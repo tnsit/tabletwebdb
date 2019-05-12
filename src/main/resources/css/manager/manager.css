@@ -1,0 +1,470 @@
+main{
+    width: 1200px;
+    margin: 20px auto 20px auto;
+    box-sizing: border-box;
+    min-height: 60px;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.excel-history{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url("/image/excel.svg") no-repeat;
+    background-size:contain;
+}
+
+.excel-history:hover{
+    -webkit-filter:invert(21%) sepia(100%) saturate(6940%) hue-rotate(318deg) brightness(89%) contrast(105%);
+}
+
+.excel-history:active{
+    transform: scale(0.9);
+}
+
+
+.tab-element{
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tab-icon{
+    width: 80px;
+    height: 80px;
+    -webkit-filter: invert(47%) sepia(87%) saturate(0%) hue-rotate(39deg) brightness(92%) contrast(90%);
+    transform: scale(0.8);
+}
+
+.tab-tablets .tab-icon{
+    background: url("/image/list.svg") no-repeat;
+    background-size:contain;
+}
+
+.tab-between .tab-icon{
+    background: url("/image/betweenmanager.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.7);
+}
+
+.tab-return .tab-icon{
+    background: url("/image/trolley.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.6);
+}
+
+.tab-element:hover .tab-icon{
+    -webkit-filter:none;
+}
+
+.tab-element .number{
+    position: absolute;
+    background-color: #e5007e;
+    width: 20px;
+    height: 20px;
+    top:0;
+    left: 60px;
+}
+
+.number p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.tab-active{
+    background-color: white;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    z-index: 10;
+    position: relative;
+}
+
+.tab-active .tab-icon{
+    -webkit-filter:none;
+
+}
+
+.tab-active:after{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 80px;
+    height: 10px;
+    left:0;
+    top:75px;
+    z-index: 20;
+}
+
+.main-container{
+    width: 1200px;
+    min-height: 100px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    display: none;
+    z-index: 15;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.show{
+    display: block;
+}
+
+.headline-container{
+    width: 1160px;
+    height: 40px;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
+}
+
+.headline-container .checkbox-all-container, .element-container .checkbox-container, .between-headline .checkbox-all-container, .between-element-container .checkbox-container, .return-container .checkbox-all-container, .return-element-container .checkbox-container{
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+
+.headline-container p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 40px;
+    float: left;
+}
+
+.headline-container p:nth-child(2), .element-info-container p:nth-child(1), .element-info-container p:nth-child(1):empty{
+    width: 120px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.headline-container p:nth-child(3), .element-info-container p:nth-child(2), .element-info-container p:nth-child(2):empty{
+    width: 120px;
+    height: 40px;
+}
+
+.headline-container p:nth-child(4), .element-info-container p:nth-child(3), .element-info-container p:nth-child(3):empty{
+    width: 180px;
+    height: 40px;
+}
+
+.headline-container p:nth-child(5), .element-info-container p:nth-child(4), .element-info-container p:nth-child(4):empty{
+    width: 280px;
+    height: 40px;
+}
+
+.headline-container p:nth-child(6), .element-info-container p:nth-child(5), .element-info-container p:nth-child(5):empty{
+    width: 240px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.check-all, .check, .to-check-all, .from-check-all, .between-check, .return-check-all, .return-check{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    opacity: 0;
+}
+
+.fake-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url("/image/checkbox_gray.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.7);
+    pointer-events: none;
+}
+
+.check-all:hover~.fake-checkbox, .check:hover~.fake-checkbox, .to-check-all:hover~.fake-checkbox, .from-check-all:hover~.fake-checkbox, .between-check:hover~.fake-checkbox, .return-check-all:hover~.fake-checkbox, .return-check:hover~.fake-checkbox{
+    background: url("/image/checkbox_black.png") no-repeat;
+    background-size:contain;
+}
+
+.check-all:checked~.fake-checkbox, .check:checked~.fake-checkbox, .to-check-all:checked~.fake-checkbox, .from-check-all:checked~.fake-checkbox, .between-check:checked~.fake-checkbox, .return-check-all:checked~.fake-checkbox, .return-check:checked~.fake-checkbox{
+    background: url("/image/checkbox.svg") no-repeat;
+    background-size:contain;
+}
+
+
+
+.element-info-container{
+    height: 40px;
+    width: 960px;
+    float: left;
+}
+
+.element-button-container{
+    height: 40px;
+    width: 160px;
+    float: right;
+
+}
+
+.element-info-container p{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 40px;
+    float: left;
+}
+
+.element-container{
+    box-sizing: border-box;
+    width: 1160px;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 300ms;
+
+}
+
+.element-container:hover {
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 0 0 2px #e5007e;
+    position: relative;
+    z-index: 30;
+}
+
+.element-container:hover .element-button{
+    display: block;
+}
+
+.border-bottom-pink, .border-bottom-pink:hover{
+    border-bottom: 1px solid #ffdbef;
+}
+
+.height-container{
+    height: 260px;
+}
+
+.element-button, .between-element-button, .return-element-button{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    float: left;
+    margin:0;
+    padding: 0;
+    display: none;
+}
+
+.element-button:hover, .between-element-button:hover, .return-element-button:hover{
+    -webkit-filter:invert(21%) sepia(100%) saturate(6940%) hue-rotate(318deg) brightness(89%) contrast(105%);
+}
+
+.element-button:active{
+    transform: scale(0.7);
+}
+
+.between-element-button:active, .return-element-button:active{
+    transform: scale(0.9);
+}
+
+.element-button:disabled, .element-button:disabled:hover{
+    -webkit-filter: invert(47%) sepia(87%) saturate(0%) hue-rotate(39deg) brightness(92%) contrast(90%);
+}
+
+.add-inter-button{
+    background: url("/image/addInter.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.8);
+}
+
+.remove-inter-button{
+    background: url("/image/removeInter.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.8);
+}
+
+.between-button{
+    background: url("/image/betweenmanager.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.85);
+}
+
+.return-button{
+    background: url("/image/trolley.png") no-repeat;
+    background-size:contain;
+    transform: scale(0.8);
+}
+
+
+.element-edit-container{
+    width: 1160px;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.purpose-select{
+    height: 40px;
+    width: 180px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 7px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    margin-left: 250px;
+    float: left;
+}
+
+.purpose-select:hover, .manager-comment:hover{
+    box-shadow: 0 0 0 2px black;
+}
+
+.manager-comment{
+    float: right;
+    width: 400px;
+    height: 120px;
+    resize: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+    text-wrap: normal;
+}
+
+
+.submit-container{
+    width:1120px;
+    height: 40px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.input-for-submit {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.empty-list{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 1160px;
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.empty-list2{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    width: 570px;
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.to-container, .return-container{
+    float: left;
+    width: 570px;
+}
+
+.from-container{
+    float: right;
+    width: 570px;
+}
+
+.between-headline, .return-headline{
+    height: 40px;
+    width: 570px;
+    border-bottom: 2px solid black;
+}
+
+.between-element, .return-element{
+    box-sizing: border-box;
+    width: 570px;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+}
+
+
+.between-headline p, .between-element p, .return-headline p, .return-element p{
+    float: left;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+
+.between-element p, .return-element p{
+    font-weight: normal;
+}
+
+.between-headline p:nth-child(2), .between-element p:nth-child(2){
+    width: 120px;
+}
+
+.return-headline p:nth-child(2), .return-element p:nth-child(2){
+    width: 490px;
+}
+
+.between-headline p:nth-child(3), .between-element p:nth-child(3){
+    width: 370px;
+}
+
+.to-cancel-button, .return-element-button{
+    float: left;
+    background: url("/image/cancel.png") no-repeat;
+    background-size:contain;
+}
+
+.from-accept-button{
+    float: left;
+    background: url("/image/accept.png") no-repeat;
+    background-size:contain;
+}
+
+.between-element:hover, .return-element:hover{
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 0 0 2px #e5007e;
+    position: relative;
+}
+
+
+
+.between-element:hover .between-element-button, .return-element:hover .return-element-button{
+    display: block;
+}

@@ -1,0 +1,2 @@
+insert into user (id, login, name, password, active) values (1, 'skladkopt', 'склад', '$2a$08$ZIRKXJ4iMrCv7E7K.i0V8ulzSd6p7VKfxbqJJMJKCyIt0HRqHc12u', true);
+insert into user_role (user_id, roles) values (1, 'ADMIN');

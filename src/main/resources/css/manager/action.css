@@ -1,0 +1,139 @@
+.action-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+}
+
+.add-inter-container, .from-to-container, .return-window-container{
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.action-label{
+    width: 560px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inter-list, .between-list{
+    width: 560px;
+    height: 202px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+
+.inter-radio-group, .between-radio-group{
+    display: none;
+}
+
+.inter-radio-group:disabled+.label-for-inter{
+    color: gray;
+}
+
+.inter-radio-group:checked+.label-for-inter, .between-radio-group:checked+.label-for-between{
+    background-color: #ffdbef;
+}
+
+.label-for-inter, .label-for-between{
+    display: block;
+    width: 538px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.inter-element, .manager-element{
+    width: 538px;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+}
+
+.inter-element:hover, .manager-element:hover{
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 0 2px #e5007e;
+    position: relative;
+}
+
+.inter-tablet-result label, .inter-inter-result label, .takeoff-inter-result label, .between-tablet-result label, .between-manager-result label, .return-result label{
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    line-height: 20px;
+}
+
+.inter-tablet-result, .takeoff-inter-result, .between-tablet-result, .between-manager-result, .return-result{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inter-inter-result, .between-manager-result{
+    margin-bottom: 20px;
+}
+
+.inter-label-container, .between-label-container{
+    width: 150px;
+    height: 30px;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.inter-tablet-result p, .inter-inter-result p, .takeoff-inter-result p, .between-tablet-result p, .between-manager-result p {
+    width: 410px;
+    float: right;
+    margin: 0;
+}
+
+.inter-button-container{
+    width: 560px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.inter-button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+
+}
+
+.inter-button:hover{
+    background-color: #e5007e;
+}
+
+.inter-button:active{
+    transform: scale(0.9);
+}
+

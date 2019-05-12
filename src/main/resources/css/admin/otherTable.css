@@ -1,0 +1,146 @@
+.main-container{
+    width: 1200px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    background-color: white;
+}
+
+.head-name-container{
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.select-container{
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+select, .create-container input{
+    margin: 0;
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    box-sizing: border-box;
+}
+
+select{
+    width: 485px;
+    padding: 5px;
+}
+
+select:hover, .create-container input:hover{
+    box-shadow: 0 0 0 2px black;
+}
+
+.create-container{
+    line-height: 40px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+    padding: 0;
+    height: 40px;
+}
+
+.create-container button{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.create-container button:hover{
+    background-color: #ff0082;
+}
+
+.create-container button:active{
+    transform: scale(0.9);
+}
+
+.search-container{
+    margin-bottom: 20px;
+    float: none;
+}
+
+.search-input{
+    width: 395px;
+    box-sizing: border-box;
+}
+
+.list-container{
+    display: none;
+    width: 485px;
+    box-sizing: border-box;
+
+}
+
+.list-container-visible{
+    display: block;
+}
+
+.list-element{
+    width: 445px;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    float: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.list-element-container{
+    width: 485px;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0;
+}
+
+.list-element-container:hover{
+    outline: 2px solid #e5007e;
+}
+
+.list-element-container:hover .list-element, .list-element-container:hover .element-button{
+    border-bottom: 1px solid transparent;
+}
+
+.list-element-container:hover:after{
+    background-color: transparent;
+}
+
+.element-button{
+    float: right;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgray;
+}
+
+.element-button-save{
+    background: url("/image/save.png") no-repeat;
+    background-size:contain;
+}
+
+.element-button:hover, .element-button-save:hover{
+    display: block;
+    -webkit-filter:invert(12%) sepia(92%) saturate(5146%) hue-rotate(318deg) brightness(93%) contrast(107%);
+}
+
+.element-button:active, .element-button-save:active{
+    transform: scale(0.9);
+}

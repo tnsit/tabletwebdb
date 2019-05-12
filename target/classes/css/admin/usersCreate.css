@@ -1,0 +1,154 @@
+.main-for-create, .main-for-list{
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.create-main, .userlist-main{
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.userlist-main{
+    margin-bottom: 20px;
+}
+
+.create-container, .userlist-container{
+    margin: 0;
+    padding-left: 10px;
+    width: 1180px;
+    box-sizing: border-box;
+}
+
+
+.create-container p{
+    display: table-cell;
+    height: 50px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.head-label{
+    margin-bottom: 10px;
+}
+
+.create-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.create{
+    width: 560px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-top: 16px;
+    padding-right: 10px;
+    box-shadow: 0 0 3px 0 #9c9c9c;
+}
+
+.create:hover{
+    background-color: #f3f3f3;
+}
+
+.create-container input[type="text"], .create-container input[type="password"], .create-container .select-for-role{
+    width: 370px;
+    height: 34px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.create-container input[type="text"]:hover, .create-container input[type="password"]:hover, .create-container .select-for-role:hover{
+    box-shadow: 0 0 0 2px black;
+}
+
+.label-container{
+    float: left;
+    font-weight: bold;
+    width: 186px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.label-container label{
+    float: right;
+    margin-right: 15px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.login-container, .password-container, .password2-container{
+    margin-right: 10px;
+}
+
+.submit-container{
+    width:1160px;
+    box-shadow: none;
+}
+
+.input-for-submit{
+    float: right;
+}
+
+.input-for-activity{
+     width: 25px;
+     height: 25px;
+     margin: 0;
+     opacity: 0;
+ }
+
+.create-checkbox{
+    position: relative;
+    margin-top: 4px;
+    float: left;
+    width: 25px;
+    height: 25px;
+
+}
+
+.fake-checkbox{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 25px;
+    height: 25px;
+    background: url("../../image/checkbox_empty.svg") no-repeat;
+    background-size:contain;
+    pointer-events: none;
+    -webkit-filter: invert(47%) sepia(87%) saturate(0%) hue-rotate(39deg) brightness(92%) contrast(90%);
+}
+
+.input-for-activity:hover ~ .fake-checkbox{
+    -webkit-filter: none;
+}
+
+
+.input-for-activity:checked ~ .fake-checkbox{
+    background: url("../../image/checkbox.svg") no-repeat;
+    background-size:contain;
+    -webkit-filter: none;
+}
+
+.input-for-submit{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 120px;
+}
+

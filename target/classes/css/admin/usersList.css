@@ -1,0 +1,127 @@
+.list-container{
+    width: 1160px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.head-container{
+    width: 1160px;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.head-name, .user-line-name{
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 40px;
+    width: 400px;
+    float: left;
+    line-height: 40px;
+}
+
+.head-role, .head-login, .user-line-role, .user-line-login{
+    height: 40px;
+    width: 300px;
+    float: left;
+    line-height: 40px;
+}
+
+.head-activ, .user-line-activity{
+    height: 40px;
+    width: 160px;
+    float: left;
+    line-height: 40px;
+}
+
+.user-container{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 300ms;
+    width: 1160px;
+}
+
+.height-user-container{
+    height: 359px;
+}
+
+.user-container:hover{
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 0 2px #e5007e;
+}
+
+
+.user-line-container{
+    box-sizing: border-box;
+    width: 1160px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.user-form-container{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+    width: 1160px;
+}
+
+.user-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.change-user{
+    width: 540px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding-top: 16px;
+    padding-right: 10px;
+    box-shadow: 0 0 3px 0 #9c9c9c;
+}
+
+.change-user:hover{
+    background-color: #f3f3f3;
+}
+
+.input-for-changename, .input-for-changelogin, .select-for-change-role, .input-for-changepassword, .input-for-password2{
+    width: 350px;
+    height: 34px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.input-for-changename:hover, .input-for-changelogin:hover, .select-for-change-role:hover, .input-for-changepassword:hover, .input-for-password2:hover{
+    box-shadow: 0 0 0 2px black;
+}
+
+.input-for-changeactivity{
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    opacity: 0;
+}
+
+.input-for-changeactivity:hover ~ .fake-checkbox{
+    -webkit-filter: none;
+}
+
+
+.input-for-changeactivity:checked ~ .fake-checkbox{
+    background: url("../../image/checkbox.svg") no-repeat;
+    background-size:contain;
+    -webkit-filter: none;
+}

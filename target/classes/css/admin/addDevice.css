@@ -1,0 +1,194 @@
+.main{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.main-for-tablet, .main-for-akb{
+    width: 590px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+}
+
+.main-for-tablet{
+    float: left;
+}
+
+.main-for-akb{
+    float: right;
+}
+
+.head-label p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 30px;
+    width: 570px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.head-label{
+    margin-bottom: 20px;
+}
+
+.field-container{
+    height: 40px;
+    width: 550px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.label-container{
+    height: 40px;
+    width: 130px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    float: right;
+    font-weight: bold;
+}
+
+input[type="text"], select{
+    float: right;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 40px;
+    width: 400px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    margin-left: 20px;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 550px;
+    box-shadow: 0 0 2px 0 #9c9c9c;
+    margin-bottom: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submit-container{
+    width:550px;
+    height: 40px;
+    padding: 0;
+}
+
+.input-for-submit {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"]:hover, select:hover, textarea:hover{
+    box-shadow: 0 0 0 2px black;
+}
+
+#add-select{
+    width: 550px;
+}
+
+#tablet-form{
+    margin-top: 20px;
+}
+
+#file{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#label-for-load, #down-templ{
+    height: 40px;
+    color: white;
+    width: 190px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    float: none;
+}
+
+#label-for-load{
+    float: left;
+    background-color: black;
+    margin-top: 10px;
+}
+
+#down-templ{
+    text-decoration: none;
+ }
+
+#label-for-load:hover, .down-templ-container:hover{
+    background-color: #ff0082;
+}
+
+#label-for-load:active, .down-templ-container:active{
+    transform: scale(0.9);
+}
+
+.down-templ-container{
+    width: 190px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.a-container{
+    width: 550px;
+}
+
+#file-name{
+    float: right;
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#file-name p{
+    text-overflow: ellipsis;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.submit-container{
+    width: 550px;
+}
+
+.disabled-submit{
+    background-color: gray;
+}
+
+.disabled-submit:hover{
+    background-color: gray;
+}

@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8546c35f-9ce8-453e-ba10-063907858412" name="Default" comment="Исправил ошибку в RestReturn">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/TransType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/EncriptionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/AddDeviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/AkbController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/GetRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/InterviewersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/IssueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/OtherTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ReturnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ShipmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/SuperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TabletController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Akb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Contractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Interviewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/ModelAkb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/ModelTablet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Os.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Purpose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Tablet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/AkbRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/CityRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ContractorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/InterviewerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ModelAkbRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ModelTabletRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/OsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/PurposeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/StatusRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TabletRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TransactionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/responce/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestAddDeviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestIssueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestOtherTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestShipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/addDevice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/akb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/createContractor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/createInterviewers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/issue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/listContractor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/listInterviewers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/otherTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/return.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/shipment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/tablet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/templateWithPin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/transaction.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/usersCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/usersList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/errorMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/headerSV.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/manager/action.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/manager/manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/waitingAjax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/accept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/addInter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/between.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/betweenmanager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/clear-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/exit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/radio_checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/radio_unchecked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/removeInter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/trolley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/displayForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/getFileName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/saveAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/saveTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/sendFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/akbExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/numberDisable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/searchAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/searchClearAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/addLine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/interHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/searchClearInterviewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/searchInterviewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getDevices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getPin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getUsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/submitIssue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/addInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenAcceptWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenCancelWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenShow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelAddInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelTakeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeBetweenWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeInterSaved.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeReturnWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/editTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/managerExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/managerListHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/pinkLine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/pinkLineBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnCancelWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveAddInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetweenAccept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetweenCancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveReturnCancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveTakeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchMainClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/selectInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/selectManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/tabActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/tabletsSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/takeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/searchClearOtherTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/searchOtherTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/selectValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/getDevicesReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/returnHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/saveStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/submitReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/addLineShipment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/copyElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/deleteElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/displayForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentOther.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentSoft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/resultExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/resultSave.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/saveElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/sendShipmentTemplate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/setCity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/setContractor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/shipmentHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/statusSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentOther.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentSoft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/numberDisable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/searchClearTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/searchTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/tabletExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/transaction/searchTransaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/transaction/transactionExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/changePassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/closeUserExists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/passwordCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/searchClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/searchStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/userHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/menuActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addDevice.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/akb.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/interviewers.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/issue.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/otherTable.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/return.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/shipment.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/users.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/interviewers.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerAdmin.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerManager.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerSuper.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/message.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/Place.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/TransType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/EncriptionConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/AddDeviceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/AkbController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/GetRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/InterviewersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/IssueController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ManagerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/OtherTableController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ReturnController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ShipmentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/SuperController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/TabletController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/TransactionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Akb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Contractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Interviewer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/ModelAkb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/ModelTablet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Os.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Purpose.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Tablet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Transaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/AkbRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/CityRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ContractorRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/InterviewerRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ModelAkbRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ModelTabletRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/OsRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/PurposeRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/StatusRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/TabletRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/TransactionRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/UserRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/responce/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestAddDeviceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestExcel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestIssueController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestOtherTableController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestReturn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestShipment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/addDevice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/akb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/createContractor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/createInterviewers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/issue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/listContractor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/listInterviewers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/otherTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/return.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/shipment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/tablet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/templateWithPin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/transaction.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/usersCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/usersList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/errorMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/headerSV.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/manager/action.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/manager/manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/css/waitingAjax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_Admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/accept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/addInter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/between.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/betweenmanager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/clear-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/exit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/radio_checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/radio_unchecked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/removeInter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/image/trolley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/displayForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/getFileName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/saveAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/saveTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/sendFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/akbExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/numberDisable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/searchAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/searchClearAkb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/addLine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/interHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/searchClearInterviewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/searchInterviewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getDevices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getPin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getUsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/submitIssue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/addInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenAcceptWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenCancelWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenShow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelAddInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelTakeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeBetweenWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeInterSaved.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeReturnWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/editTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/managerExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/managerListHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/pinkLine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/pinkLineBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnCancelWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveAddInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetweenAccept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetweenCancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveReturnCancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveTakeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchMainClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/selectInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/selectManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/tabActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/tabletsSelectAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/takeOffInter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/searchClearOtherTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/searchOtherTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/selectValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/getDevicesReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/returnHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/saveStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/submitReturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/addLineShipment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/copyElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/deleteElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/displayForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipmentOther.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipmentSoft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/resultExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/resultSave.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/saveElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/sendShipmentTemplate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/setCity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/setContractor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/shipmentHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/statusSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/submitShipmentOther.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/submitShipmentSoft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/numberDisable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/searchClearTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/searchTablet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/tabletExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/transaction/searchTransaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/transaction/transactionExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/changePassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/closeUserExists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/passwordCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/searchClear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/searchStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/userHeightDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/script/menuActive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/addDevice.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/akb.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/interviewers.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/issue.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/otherTable.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/return.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/shipment.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/users.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/manager/interviewers.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/manager/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerAdmin.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerManager.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerSuper.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/message.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super/tablets.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/super/transaction.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/add_tablet_template.xlsx" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tabletwebdb" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tablets.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/tablets.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/users.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="67" column="91" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabletController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TabletController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuperController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/SuperController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tablets.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/super/tablets.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="return.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/return.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestReturn.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestReturn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="63" column="62" lean-forward="true" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getDevicesReturn.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/return/getDevicesReturn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>checkbox-all-container</find>
+      <find>check-all</find>
+      <find>between-element-container</find>
+      <find>takeoff-inter</find>
+      <find>add-inter-container</find>
+      <find>takeoff-inter-result</find>
+      <find>between-check</find>
+      <find>min-h</find>
+      <find>between-element</find>
+      <find>between-element-button</find>
+      <find>box-shadow: 0 0 0 2px #e5007e;</find>
+      <find>between-cancel-result</find>
+      <find>Отменить</find>
+      <find>value=&quot;закрыть&quot;</find>
+      <find>between-cancel-cancel</find>
+      <find>.return-element-button</find>
+      <find>Hibernate:</find>
+      <find>dura</find>
+      <find>tablet.id</find>
+      <find>soft-shipment-container</find>
+      <find>soft-search-tablet-input</find>
+      <find>result-form</find>
+      <find>result-input-container-soft</find>
+      <find>result-soft</find>
+      <find>city-select-soft</find>
+      <find>input-for-submit-soft</find>
+      <find>submit-tablet-soft</find>
+      <find>contractor-soft</find>
+      <find>contractor-select-soft</find>
+      <find>.id</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>element.get(&quot;table&quot;)</replace>
+      <replace>element.get(&quot;element&quot;)</replace>
+      <replace>akb</replace>
+      <replace>.result-akb</replace>
+      <replace>.result-tablet</replace>
+      <replace>склад</replace>
+      <replace>value=&quot;Закрыть&quot;</replace>
+      <replace>tablet.id?c</replace>
+      <replace>.id?c</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnSelectAll.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeReturnWindow.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnWindow.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnCancelWindow.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveReturnCancel.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/manager/managerExcel.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TransactionRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestExcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TabletRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/db.migration/V1__Inid_DB.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_Passwords.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/displayForm.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentSoft.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/setCity.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentOther.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ShipmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/admin/shipment.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/statusSelect.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/TransType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestShipment.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/shipment.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Admin.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentOther.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestIssueController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/issue/getDevices.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/otherTable.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/akb.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/interviewers.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/users.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/manager/interviewers.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/manager/tablets.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentSoft.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/EncriptionConfig.java" />
+        <option value="$PROJECT_DIR$/scripts/deploy.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/addDevice.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/admin/tablet.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/tablets.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TabletController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/SuperController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/super/tablets.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestReturn.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tabletwebdb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tabletwebdb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="5" />
+    <option name="width" value="1279" />
+    <option name="height" value="680" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="Enum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="return" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tabletwebdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tabletwebdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysqlbakup/pom.xml" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources\db\migration" />
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources" />
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources\templates\db\migration" />
+      <recent name="C:\Users\Alien\IdeaProjects\tabletwebdb\src\main\resources\script\admin\other" />
+      <recent name="C:\Users\Alien\IdeaProjects\tabletwebdb\src\main\resources\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.tabletwebdb.controller" />
+      <recent name="com.example.tabletwebdb.rest" />
+      <recent name="com.example.tabletwebdb.entity" />
+      <recent name="com.example.tabletwebdb.repos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alien\IdeaProjects\tabletwebdb\src\main\resources" />
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources\script\admin\shipment" />
+      <recent name="C:\Users\Alien\IdeaProjects\tabletwebdb\src\main\resources\script\admin\manager" />
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources\script\admin\manager" />
+      <recent name="C:\Users\AlienShooter\IdeaProjects\tabletwebdb\src\main\resources\image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tabletwebdb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.tabletwebdb.Application" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8546c35f-9ce8-453e-ba10-063907858412" name="Default" comment="" />
+      <created>1551987606844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551987606844</updated>
+      <workItem from="1551987610043" duration="363000" />
+      <workItem from="1551987991027" duration="58000" />
+      <workItem from="1551988704454" duration="5335000" />
+      <workItem from="1552119454475" duration="1283000" />
+      <workItem from="1552221307419" duration="11653000" />
+      <workItem from="1552299035849" duration="14143000" />
+      <workItem from="1552326895090" duration="5884000" />
+      <workItem from="1552381663555" duration="27798000" />
+      <workItem from="1552499446580" duration="8753000" />
+      <workItem from="1552546272288" duration="19396000" />
+      <workItem from="1552588099563" duration="1140000" />
+      <workItem from="1552740709076" duration="8994000" />
+      <workItem from="1552899525185" duration="12698000" />
+      <workItem from="1552932191828" duration="6822000" />
+      <workItem from="1552982938492" duration="14052000" />
+      <workItem from="1553015956512" duration="5514000" />
+      <workItem from="1553071067092" duration="18235000" />
+      <workItem from="1553104126279" duration="5577000" />
+      <workItem from="1553162015424" duration="24460000" />
+      <workItem from="1553364164231" duration="30472000" />
+      <workItem from="1553593591447" duration="46581000" />
+      <workItem from="1553796800463" duration="26321000" />
+      <workItem from="1554102760314" duration="10288000" />
+      <workItem from="1554145824716" duration="7344000" />
+      <workItem from="1554198986405" duration="18981000" />
+      <workItem from="1554236979716" duration="2334000" />
+      <workItem from="1554282521820" duration="38877000" />
+      <workItem from="1554403676188" duration="11736000" />
+      <workItem from="1554447836779" duration="16910000" />
+      <workItem from="1554489293568" duration="5083000" />
+      <workItem from="1554543111737" duration="42158000" />
+      <workItem from="1554706626151" duration="64548000" />
+      <workItem from="1555098064572" duration="1288000" />
+      <workItem from="1555141240243" duration="18262000" />
+      <workItem from="1555272438950" duration="2260000" />
+      <workItem from="1555312851691" duration="9803000" />
+      <workItem from="1555350896422" duration="9414000" />
+      <workItem from="1555405747993" duration="21575000" />
+      <workItem from="1555439696008" duration="6406000" />
+      <workItem from="1555494584979" duration="10176000" />
+      <workItem from="1555534887773" duration="3651000" />
+      <workItem from="1555580373822" duration="17658000" />
+      <workItem from="1555700758608" duration="26218000" />
+      <workItem from="1555925503363" duration="19369000" />
+      <workItem from="1556039942677" duration="7738000" />
+      <workItem from="1556089742990" duration="17767000" />
+      <workItem from="1556133918614" duration="5113000" />
+      <workItem from="1556175230854" duration="7926000" />
+      <workItem from="1556301504354" duration="4957000" />
+      <workItem from="1556361886110" duration="19153000" />
+      <workItem from="1556522121406" duration="16877000" />
+      <workItem from="1556647352239" duration="9384000" />
+      <workItem from="1556876800911" duration="18841000" />
+      <workItem from="1557087427942" duration="432000" />
+      <workItem from="1557126821808" duration="6336000" />
+      <workItem from="1557228186933" duration="1552000" />
+      <workItem from="1557230394193" duration="6459000" />
+      <workItem from="1557298496521" duration="7322000" />
+      <workItem from="1557603382005" duration="505000" />
+      <workItem from="1557608742190" duration="2503000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="792736000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32900432" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32900432" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4134199" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32900432" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.25746268" />
+      <window_info anchor="right" id="Bean Validation" order="3" weight="0.32995737" />
+      <window_info id="Web" order="2" sideWeight="0.5016129" side_tool="true" weight="0.24733475" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" sideWeight="0.5016129" side_tool="true" weight="0.24733475" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32142857" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32900432" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23933902" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправил ошибку в RestReturn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил ошибку в RestReturn" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Tablet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentSoft.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/setCity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ShipmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/displayForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentOther.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/admin/shipment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="740" column="17" lean-forward="true" selection-start-line="740" selection-start-column="17" selection-end-line="740" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/statusSelect.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/TransType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Admin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestShipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="478" selection-start-line="478" selection-end-line="478" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentOther.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/issue/getUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestIssueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="71" column="64" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/issue.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/interviewers.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="98" column="76" selection-start-line="98" selection-start-column="76" selection-end-line="98" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/akb.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1556">
+          <caret line="157" column="88" selection-start-line="157" selection-start-column="88" selection-end-line="157" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/issue/getDevices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/otherTable.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" column="102" selection-start-line="118" selection-start-column="102" selection-end-line="118" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/transaction.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/super/transaction.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/manager/tablets.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="368" column="78" selection-start-line="368" selection-start-column="78" selection-end-line="368" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/manager/interviewers.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="96" column="76" selection-start-line="96" selection-start-column="76" selection-end-line="96" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/shipment.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/issue/submitIssue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentSoft.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/EncriptionConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="93" selection-start-line="12" selection-end-line="12" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/addDevice.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/admin/addDevice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/admin/return.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/admin/tablet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4063">
+          <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/tablets/searchTablet.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/admin/usersCreate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/users.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="91" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TabletController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/SuperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/tablets.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/super/tablets.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/return.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ReturnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/script/admin/return/getDevicesReturn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestReturn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="63" column="62" lean-forward="true" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>tabletwebdb</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

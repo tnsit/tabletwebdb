@@ -1,0 +1,125 @@
+.main-issue{
+    width: 1200px;
+    margin: 20px auto 20px auto;
+    box-sizing: border-box;
+}
+
+.main-for-action, .main-for-pin{
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 #9c9c9c;
+    padding: 20px;
+
+}
+
+.main-for-action{
+    float: left;
+    width: 960px;
+}
+
+.main-for-pin{
+    float: right;
+    width: 220px;
+}
+
+.head-label p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.main-for-action .head-label p{
+    width: 920px;
+}
+
+.main-for-pin .head-label p{
+    width: 180px;
+}
+
+.head-label{
+    margin-bottom: 20px;
+}
+
+.search-pin-form{
+    height: 40px;
+    width: 180px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.search-pin-container{
+    width: 180px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.search-pin-input{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+    float: left;
+}
+
+.search-pin-submit{
+    height: 40px;
+    width: 40px;
+    background: url("/image/search.svg") no-repeat;
+    background-size:contain;
+    transform: scale(0.9);
+    -webkit-filter: invert(100%) sepia(0%) saturate(24%) hue-rotate(273deg) brightness(107%) contrast(100%);
+}
+
+.search-pin-submit-container{
+    float: right;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+
+.search-pin-submit-container:hover{
+    background-color: #e5007e;
+}
+
+.search-pin-submit:active{
+    transform: scale(0.8);
+}
+
+.element-pin-container{
+    width: 180px;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.element-pin-container p{
+    line-height: 40px;
+    width: 90px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    float: left;
+    margin: 0;
+}
+
+.element-pin-container p:first-child{
+    font-weight: bold;
+}
+
+.list-pin-container{
+    margin-top: 11px;
+}
+
+.empty{
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
