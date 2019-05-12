@@ -1,453 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8546c35f-9ce8-453e-ba10-063907858412" name="Default" comment="Исправил ошибку в RestReturn">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/Enum/TransType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/EncriptionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/AddDeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/AkbController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/GetRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/InterviewersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/IssueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/OtherTableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ReturnController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/ShipmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/SuperController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TabletController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/TransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Akb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Contractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Interviewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/ModelAkb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/ModelTablet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Os.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Purpose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Tablet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/AkbRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/CityRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ContractorRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/InterviewerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ModelAkbRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/ModelTabletRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/OsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/PurposeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/StatusRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TabletRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/TransactionRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/repos/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/responce/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestAddDeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestIssueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestOtherTableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestReturn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/rest/RestShipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tabletwebdb/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/addDevice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/akb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/createContractor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/createInterviewers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/issue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/listContractor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/listInterviewers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/otherTable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/return.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/shipment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/tablet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/templateWithPin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/transaction.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/usersCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/admin/usersList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/errorMessage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/headerSV.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/manager/action.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/manager/manager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/waitingAjax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Admin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/accept.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/addInter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/between.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/betweenmanager.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_empty.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/checkbox_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/clear-search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/excel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/exit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/radio_checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/radio_unchecked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/removeInter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/trolley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/displayForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/getFileName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/saveAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/saveTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/addDevice/sendFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/akbExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/numberDisable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/searchAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/akb/searchClearAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/addLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/interHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/searchClearInterviewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/interviewers/searchInterviewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getDevices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getPin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/getUsers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/issue/submitIssue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/addInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenAcceptWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenCancelWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/betweenShow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelAddInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/cancelTakeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeBetweenWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeInterSaved.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/closeReturnWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/editTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/managerExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/managerListHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/pinkLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/pinkLineBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnCancelWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/returnWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveAddInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetweenAccept.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveBetweenCancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveReturnCancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/saveTakeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchMainClear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/searchManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/selectInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/selectManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/tabActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/tabletsSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/manager/takeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/searchClearOtherTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/searchOtherTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/other/selectValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/getDevicesReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/returnHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/saveStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/return/submitReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/addLineShipment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/copyElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/deleteElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/displayForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentOther.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/getDevicesShipmentSoft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/resultExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/resultSave.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/saveElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/sendShipmentTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/setCity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/setContractor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/shipmentHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/statusSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentOther.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/shipment/submitShipmentSoft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/numberDisable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/searchClearTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/searchTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/tablets/tabletExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/transaction/searchTransaction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/transaction/transactionExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/changePassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/closeUserExists.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/passwordCheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/searchClear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/searchStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/admin/users/userHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/menuActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/addDevice.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/akb.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/interviewers.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/issue.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/otherTable.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/return.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/shipment.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/users.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/interviewers.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerAdmin.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerManager.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/headerSuper.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/message.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/super/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/Place.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/Enum/TransType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/EncriptionConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/config/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/AddDeviceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/AkbController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/GetRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/InterviewersController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/IssueController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ManagerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/OtherTableController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ReturnController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/ShipmentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/SuperController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/TabletController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/TransactionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Akb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/City.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Contractor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Interviewer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/ModelAkb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/ModelTablet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Os.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Purpose.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Tablet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/Transaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/AkbRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/CityRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ContractorRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/InterviewerRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ModelAkbRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/ModelTabletRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/OsRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/PurposeRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/StatusRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/TabletRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/TransactionRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/repos/UserRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/responce/Response.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestAddDeviceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestExcel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestIssueController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestOtherTableController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestReturn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/rest/RestShipment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/tabletwebdb/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/addDevice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/akb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/createContractor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/createInterviewers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/issue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/listContractor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/listInterviewers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/otherTable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/return.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/shipment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/tablet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/templateWithPin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/transaction.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/usersCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/admin/usersList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/errorMessage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/headerSV.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/manager/action.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/manager/manager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/css/waitingAjax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__Init_DB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_Admin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/accept.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/addInter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/between.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/betweenmanager.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_empty.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/checkbox_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/clear-search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/excel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/exit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/radio_checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/radio_unchecked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/removeInter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/image/trolley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/displayForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/getFileName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/saveAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/saveTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/addDevice/sendFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/akbExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/numberDisable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/searchAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/akb/searchClearAkb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/addLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/interHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/searchClearInterviewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/interviewers/searchInterviewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getDevices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getPin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/getUsers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/issue/submitIssue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/addInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenAcceptWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenCancelWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/betweenShow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelAddInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/cancelTakeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeBetweenWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeInterSaved.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/closeReturnWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/editTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/managerExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/managerListHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/pinkLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/pinkLineBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnCancelWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/returnWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveAddInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetweenAccept.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveBetweenCancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveReturnCancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/saveTakeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchMain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchMainClear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/searchManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/selectInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/selectManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/tabActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/tabletsSelectAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/manager/takeOffInter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/searchClearOtherTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/searchOtherTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/other/selectValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/getDevicesReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/returnHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/saveStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/return/submitReturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/addLineShipment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/copyElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/deleteElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/displayForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipmentOther.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/getDevicesShipmentSoft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/resultExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/resultSave.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/saveElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/sendShipmentTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/setCity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/setContractor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/shipmentHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/statusSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/submitShipmentOther.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/shipment/submitShipmentSoft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/numberDisable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/searchClearTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/searchTablet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/tablets/tabletExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/transaction/searchTransaction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/transaction/transactionExcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/changePassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/closeUserExists.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/passwordCheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/searchClear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/searchStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/admin/users/userHeightDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/script/menuActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/addDevice.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/akb.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/interviewers.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/issue.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/otherTable.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/return.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/shipment.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/users.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/manager/interviewers.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/manager/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerAdmin.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerManager.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/headerSuper.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/message.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/parts/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/super/tablets.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/super/transaction.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/add_tablet_template.xlsx" afterDir="false" />
+    <list default="true" id="8546c35f-9ce8-453e-ba10-063907858412" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -889,7 +444,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1043,15 +598,24 @@
       <workItem from="1557230394193" duration="6459000" />
       <workItem from="1557298496521" duration="7322000" />
       <workItem from="1557603382005" duration="505000" />
-      <workItem from="1557608742190" duration="2503000" />
+      <workItem from="1557608742190" duration="3395000" />
     </task>
+    <task id="LOCAL-00001" summary="Исправил ошибку в RestReturn">
+      <created>1557657647837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557657647837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792736000" />
+    <option name="totallyTimeSpent" value="793628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -1065,7 +629,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32900432" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32900432" />
@@ -1491,6 +1055,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jquery</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1519,7 +1084,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
